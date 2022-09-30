@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="payment-formcss.css"
+</head>
+<body>
+    <div class="container">
+    <h1>PAYMENT FORM</h1>
+    <section>
+    <h2>Conatct Details</h2>
+    <label> First Name*: <input type="text" name="First name" placeholder="First name"required></label>
+    <label> Middle Name: <input type="text" name="Middle name" placeholder="Middle name"></label>
+    <label> Last Name*: <input type="text" name="Last name" placeholder="Last name" required></label><br>
+Mobile number*:<input type="number" name="number" placeholder="Enter mobile number" required> <br>
+Email:<input type="email" name="Email" placeholder="Enter your Email" required> <br>
+Gender*:<input type="radio" name="gender" value="male" placeholder="Chose your gender" required>Male
+<input type="radio" name="gender" value="female" placeholder="Chose your gender"required>Female
+<input type="radio" name="gender" value="other" placeholder="Chose your gender"required>Other<br>
+Address:<input type="text" name="village" value="" placeholder="Enter your village"required>
+<input type="text" name="district" value="" placeholder="Enter your district"required>
+<input type="text" name="state" value="" placeholder="Enter your state"required> <br>
+Pincode*: <input type="number" name="Pincode" value="" placeholder="Enter your Pincode"required>
+</section>
+<section>
+<h2>Payment Details</h2>
+<p>Cardtype:
+    <select name="card_type" id="card_type" required>
+        <option value="">---Select Debit card---</option>
+        <option value="Visa Debit Card">Visa Debit Card</option>
+        <option value="MasterDebit Card">Master Debit Card</option>
+        <option value="TRupay Debit Card">Rupay Debit Card</option>
+        <option value="Maestro Debit Card">Maestro Debit Card</option>
+    </select>
+</p>
+<P>
+    Card number*: <input type="number" name="card number" id="Card number" maxlength="16" minlength="16"required>
+</P>
+<P>
+    Expiration date:  <input type="date" name="expiration date" id="Expiration date"required>
+</P>
+<P>
+    Cvv number: <input type="password" name="cvv number" id="CVV number"required>
+</P>
+<p><input type="radio" required>I agree with your terms and conditions by using your payment form</p>
+<input type="submit" value="Pay now"required>
+</div>
+</section>
+<center>
+    <h2 style="color: black;">Map</h2>
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="400" height="300" id="gmap_canvas" src=
+            "https://maps.google.com/maps?q=alpha%201%20block%20c%20greater%20noida&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            frameborder="20" 
+            scrolling="yes" 
+            marginheight="15" 
+            marginwidth="15">
+        </iframe>
+    </center>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Refund policy</a>
+        <a href="#">Copyright 2022*</a>
+        <a href="#">Privacy policy</a>
+    </footer>
+</body>
+</html>
